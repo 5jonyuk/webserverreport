@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/회원가입.css" />
+    <title>스터디그룹 가입</title>
+  </head>
+  <body>
+    <h1>스터디그룹 가입양식</h1>
+    <form action="../php/스터디그룹가입.php" method="post">
+      <fieldset>
+        <legend>입력정보</legend>
+        <div>
+          그룹번호:<input
+            type="text"
+            required
+            name="pg_num"
+            placeholder="ex)11111"
+          />
+          <br />
+          <b id="a">그룹번호 최대 5자리 이어야 합니다.</b>
+        </div>
+        <div>그룹이름:<input type="text" required name="pg_name" /><br /></div>
+        <div>이름:<input type="text" required name="ps_name" /><br /></div>
+        <div>학번:<input type="text" required name="ps_num" /><br /></div>
+        <div>가입일자:<input type="date" name="p_regdate" /></div>
+      </fieldset>
+      <input id="reg" type="submit" value="가입하기" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.group-info {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-info p {
+  margin-bottom: 10px;
+}
+
+.group-info h2 {
+  color: #333;
+}
+
+.group-info .leader {
+  font-weight: bold;
+}
+
+.group-info .participants {
+  margin-left: 20px;
+}
+
+.group-info .participant {
+  margin-bottom: 5px;
+}
+
+.group-info a {
+  text-decoration: none;
+  color: #3498db;
+}

@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.pagination b {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+/* 이전 코드 유지 */
+
+p {
+  margin-top: 20px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.button:hover {
+  background-color: #45a049;
+}
+
+a.home {
+  display: inline-block;
+  margin-top: -15px;
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.home:hover {
+  background-color: #2980b9;
+}

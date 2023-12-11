@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/회원가입.css" />
+    <title>스터디그룹</title>
+  </head>
+
+  <body>
+    <h1>스터디그룹 생성양식</h1>
+    <form action="../php/스터디그룹생성.php" method="post">
+      <fieldset>
+        <legend>입력정보</legend>
+        <div>
+          그룹번호:<input
+            type="text"
+            required
+            name="g_num"
+            placeholder="ex)11111"
+          />
+          <br />
+          <b id="a">그룹번호 최대 5자리 이어야 합니다.</b>
+        </div>
+        <div>
+          그룹이름:<input type="text" required name="g_name" /><br />
+          <b id="a"
+            >그룹이름은 영문,숫자,특수문자(_)로 5~15자 이내이어야 합니다.</b
+          >
+        </div>
+        <div>그룹장이름: <input type="text" required name="s_name" /></div>
+        <div>그룹장학번:<input type="text" required name="s_num" /><br /></div>
+        <div>가입일자:<input type="date" name="regdate" /></div>
+      </fieldset>
+      <input id="reg" type="submit" value="생성하기" />
+      <a id="s_reg" href="../html/그룹로그인.html">로그인</a>
+      <a id="s_reg" href="스터디그룹가입.html">가입하기</a>
+    </form>
+  </body>
+</html>

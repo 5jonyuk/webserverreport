@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자료실</title>
+    <link rel="stylesheet" href="../css/자료실h.css" />
+  </head>
+  <body>
+    <h1>자료 업로드</h1>
+    <form
+      name="upload_form"
+      method="post"
+      enctype="multipart/form-data"
+      action="../php/자료업로드.php"
+    >
+      <label>이름</label><input type="text" required name="irum" />
+      <p><label>제목</label><input type="text" required name="title" /></p>
+
+      <p>
+        <label>글내용</label
+        ><textarea rows="10" cols="70" required name="content"></textarea>
+      </p>
+      <input type="hidden" name="MAX_FILE_SIZE" value="2048000" />
+      <p>이미지 업로드 파일을 선택하시오 !</p>
+      <p><input type="file" name="upload_file" multiple /></p>
+      <p><input type="submit" value="파일업로드" /></p>
+    </form>
+    <a href="../php/자료실.php">자료실로</a>
+  </body>
+</html>

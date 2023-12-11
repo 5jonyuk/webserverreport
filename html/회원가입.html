@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/회원가입.css" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <h1>청학동 게시판 회원가입양식</h1>
+    <form action="../php/회원가입.php" method="post">
+      <fieldset>
+        <legend>입력정보</legend>
+        <div>학번:<input type="text" required name="num" /></div>
+        <div>이름:<input type="text" required name="name" /><br /></div>
+        <div>
+          아이디:<input type="text" required name="id" /><br />
+          <b id="a"
+            >아이디는 영문,숫자,특수문자(_)로 5~15자 이내이어야 합니다.</b
+          >
+        </div>
+        <div>
+          비밀번호:<input type="password" required name="pwd" /><br />
+          <b id="a"
+            >비밀번호는 영문,숫자,특수문자(_)로 8~15자 이내이어야 합니다.</b
+          >
+        </div>
+
+        <div>
+          전공:<input
+            type="text"
+            required
+            name="major"
+            placeholder="ex)컴퓨터공학과"
+          />
+          <br />
+          <b id="a">컴공(x), 컴공과(x) 줄임말 사용불가입니다.</b>
+        </div>
+
+        <div>
+          흥미:<input type="text" required name="interest" /> <br />
+          <b id="a">흥미는 10가지 이하로 작성합니다.</b>
+        </div>
+        <div>가입일자:<input type="date" name="regdate" /></div>
+      </fieldset>
+      <input id="reg" type="submit" value="가입하기" />
+    </form>
+  </body>
+</html>
